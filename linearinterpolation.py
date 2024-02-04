@@ -9,7 +9,6 @@ altit = 5
 course = 6
 speed = 7
 
-
 def fillin(startx, endx, starty, endy, time):
      slope = (endy-starty) / (endx-startx)
      result = slope * (time - startx) + starty
@@ -68,10 +67,11 @@ def run(col):
 plt.rcParams["figure.figsize"] = [7.50, 3.50]
 plt.rcParams["figure.autolayout"] = True
 
+#fill in longit, latit, altit, course, or speed
 output = run(altit)
 
+#prints interpolated data to the console
 print(output[0])
-plt.title("Line graph")
-plt.plot(output[3], output[1], color="blue")
-plt.plot(output[2], output[0], color="red")
+plt.plot(output[3], output[1], color="blue") #displays original data, feel free to comment this out if it's messing with the graph scale
+plt.plot(output[2], output[0], color="red") #displays interpolated data
 plt.show() 
