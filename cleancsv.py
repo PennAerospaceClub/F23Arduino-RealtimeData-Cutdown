@@ -68,9 +68,19 @@ plt.rcParams["figure.figsize"] = [7.50, 3.50]
 plt.rcParams["figure.autolayout"] = True
 
 #fill in longit, latit, altit, course, or speed
-output = run(latit)
+latcol = run(latit)[0]
+longcol =run(longit)[0]
+altcol = run(altit)[0]
+coursecol = run(course)[0]
+speedcol = run(speed)[0]
 
-#prints interpolated data to the console
-plt.plot(output[3], output[1], color="blue") #displays original data, feel free to comment this out if it's messing with the graph scale
-plt.plot(output[2], output[0], color="red") #displays interpolated data
-plt.show() 
+cleaneddata = []
+timestamp = 0
+
+with open('CLEANED.CSV', 'w', newline='') as endfile:
+     writer = csv.writer(endfile)
+
+     for i in range(721):
+        writer.writerow(["entry: " + str(timestamp), "latitude: " + str(latcol[i]), "longitude: " + str(longcol[i]), 
+                         "altitude: " + str(altcol[i]), "course: " + str(coursecol[i]), "speed: " + str(speedcol[i])])
+        timestamp += 1
