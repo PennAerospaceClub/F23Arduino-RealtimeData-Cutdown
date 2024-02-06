@@ -68,7 +68,7 @@ plt.rcParams["figure.figsize"] = [7.50, 3.50]
 plt.rcParams["figure.autolayout"] = True
 
 #fill in longit, latit, altit, course, or speed
-output = run(latit)
+output = run(altit)
 
 #prints interpolated data to the console
 plt.plot(output[3], output[1], color="blue") #displays original data, feel free to comment this out if it's messing with the graph scale
