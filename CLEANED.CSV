@@ -1,3 +1,4 @@
+entry(),"latitude(deg,min,s)","longitude(deg,min,s)",altitude(m),course(m),speed(m/s)
 entry: 0,latitude: 39.950974,longitude: -75.202644,altitude: 39.200001,course: 204.4056,speed: 0.13
 entry: 1,latitude: 39.950974,longitude: -75.202644,altitude: 39.200001,course: 205.94048,speed: 0.13
 entry: 2,latitude: 39.950951,longitude: -75.202644,altitude: 39.299999,course: 207.47536,speed: 0.13
@@ -719,3 +720,4 @@ entry: 717,latitude: 39.76123,longitude: -75.999527,altitude: 5694.2998,course: 
 entry: 718,latitude: 39.76123,longitude: -75.999527,altitude: 5694.2998,course: 128.57,speed: 56.7
 entry: 719,latitude: 39.76123,longitude: -75.999527,altitude: 5694.2998,course: 128.57,speed: 56.7
 entry: 720,latitude: 39.76123,longitude: -75.999527,altitude: 5694.2998,course: 128.57,speed: 56.7
+entry: 721,latitude: 39.76123,longitude: -75.999527,altitude: 5694.2998,course: 128.57,speed: 56.7

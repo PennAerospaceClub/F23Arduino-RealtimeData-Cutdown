@@ -77,10 +77,13 @@ speedcol = run(speed)[0]
 cleaneddata = []
 timestamp = 0
 
+
+
 with open('CLEANED.CSV', 'w', newline='') as endfile:
      writer = csv.writer(endfile)
-
-     for i in range(721):
+     writer.writerow (["entry", "latitude(deg,min,s)", "longitude(deg,min,s)", 
+                         "altitude(m)", "course(m)", "speed(m/s)"])
+     for i in range(722):
         writer.writerow(["entry: " + str(timestamp), "latitude: " + str(latcol[i]), "longitude: " + str(longcol[i]), 
                          "altitude: " + str(altcol[i]), "course: " + str(coursecol[i]), "speed: " + str(speedcol[i])])
         timestamp += 1
